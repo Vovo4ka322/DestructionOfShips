@@ -26,7 +26,6 @@ public class CoreSelector : MonoBehaviour
                 {
                     Selected?.Invoke(component);
                     Debug.Log("Докоснулся до шара");
-                    Destroy(component.gameObject);
                 }
             }
         }

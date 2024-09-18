@@ -870,6 +870,7 @@ GameObject:
   - component: {fileID: 416142404}
   - component: {fileID: 416142403}
   - component: {fileID: 416142402}
+  - component: {fileID: 416142405}
   m_Layer: 0
   m_Name: Strip (3)
   m_TagString: Untagged
@@ -969,6 +970,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416142400}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &416142405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416142400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d39b1c5400e60349b5da245212485a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placesForSeat:
+  - {fileID: 549162432}
+  - {fileID: 1310106952}
+  - {fileID: 159906956}
+  - {fileID: 907135996}
+  - {fileID: 1205150425}
+  - {fileID: 1327566563}
 --- !u!1 &416405189
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,6 +1001,7 @@ GameObject:
   - component: {fileID: 416405193}
   - component: {fileID: 416405192}
   - component: {fileID: 416405191}
+  - component: {fileID: 416405194}
   m_Layer: 0
   m_Name: Strip (2)
   m_TagString: Untagged
@@ -1080,6 +1101,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 416405189}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &416405194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416405189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d39b1c5400e60349b5da245212485a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placesForSeat:
+  - {fileID: 424523024}
+  - {fileID: 823755680}
+  - {fileID: 1609343925}
+  - {fileID: 703925535}
+  - {fileID: 1440719984}
+  - {fileID: 773329015}
 --- !u!1 &418419694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,15 +1169,15 @@ MonoBehaviour:
   - {fileID: -6063216693046021584, guid: 3ecd18bb27b0682439a3120c217c5ad9, type: 3}
   - {fileID: -2004224500524449584, guid: 623d16758c119194ba9b11b2de16239e, type: 3}
   - {fileID: 6221764138470493292, guid: a268e2b1a4b433640a72c674340d04c3, type: 3}
-  _clipSeats:
-  - {fileID: 867429093}
-  - {fileID: 459582714}
-  - {fileID: 62593974}
-  - {fileID: 360189973}
-  - {fileID: 1206776412}
-  - {fileID: 889567324}
+  _clip: {fileID: 674745431}
   _spawners:
   - {fileID: 740724942}
+  - {fileID: 866509155}
+  - {fileID: 416405194}
+  - {fileID: 416142405}
+  - {fileID: 2103990335}
+  - {fileID: 532626052}
+  _selector: {fileID: 963194229}
 --- !u!1 &424523023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,6 +1515,7 @@ GameObject:
   - component: {fileID: 532626051}
   - component: {fileID: 532626050}
   - component: {fileID: 532626049}
+  - component: {fileID: 532626052}
   m_Layer: 0
   m_Name: Strip (5)
   m_TagString: Untagged
@@ -1574,6 +1615,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532626047}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &532626052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532626047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d39b1c5400e60349b5da245212485a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placesForSeat:
+  - {fileID: 2001158446}
+  - {fileID: 1771281812}
+  - {fileID: 445653831}
+  - {fileID: 1023053136}
+  - {fileID: 794178440}
+  - {fileID: 52305355}
 --- !u!1 &549162431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1796,6 +1856,7 @@ GameObject:
   - component: {fileID: 674745429}
   - component: {fileID: 674745428}
   - component: {fileID: 674745427}
+  - component: {fileID: 674745431}
   m_Layer: 0
   m_Name: Clip
   m_TagString: Untagged
@@ -1890,6 +1951,26 @@ Transform:
   - {fileID: 1721672759}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 38.37}
+--- !u!114 &674745431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674745426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42db9c4aba300b5458624829b92a3414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _seats:
+  - {fileID: 867429093}
+  - {fileID: 459582714}
+  - {fileID: 62593974}
+  - {fileID: 360189973}
+  - {fileID: 1206776412}
+  - {fileID: 889567324}
+  _clipCore: []
 --- !u!1 &703925534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2642,6 +2723,7 @@ GameObject:
   - component: {fileID: 866509154}
   - component: {fileID: 866509153}
   - component: {fileID: 866509152}
+  - component: {fileID: 866509155}
   m_Layer: 0
   m_Name: Strip (1)
   m_TagString: Untagged
@@ -2741,6 +2823,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866509150}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &866509155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866509150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d39b1c5400e60349b5da245212485a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placesForSeat:
+  - {fileID: 51446700}
+  - {fileID: 1313878796}
+  - {fileID: 1031991989}
+  - {fileID: 728989410}
+  - {fileID: 1608666592}
+  - {fileID: 580527977}
 --- !u!1 &867429092
 GameObject:
   m_ObjectHideFlags: 0
@@ -5163,6 +5264,7 @@ GameObject:
   - component: {fileID: 2103990334}
   - component: {fileID: 2103990333}
   - component: {fileID: 2103990332}
+  - component: {fileID: 2103990335}
   m_Layer: 0
   m_Name: Strip (4)
   m_TagString: Untagged
@@ -5262,6 +5364,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103990330}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2103990335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103990330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d39b1c5400e60349b5da245212485a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _placesForSeat:
+  - {fileID: 2094115998}
+  - {fileID: 729051416}
+  - {fileID: 1512905432}
+  - {fileID: 1009230831}
+  - {fileID: 1906625247}
+  - {fileID: 78557406}
 --- !u!1001 &2447791605033265485
 PrefabInstance:
   m_ObjectHideFlags: 0

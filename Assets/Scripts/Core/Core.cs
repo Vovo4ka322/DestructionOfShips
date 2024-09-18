@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class Core : MonoBehaviour, ISelectable
 {
-    private List<Transform> _clipSeats;
+    //private List<Transform> _clipSeats;
 
-    public void Init(List<Transform> clipSeats)
+    //public void Init(List<Transform> clipSeats)
+    //{
+    //    _clipSeats = clipSeats;
+    //}
+
+    public void GetAnyPosition(Clip clip)
     {
-        _clipSeats = clipSeats;
+        transform.position = clip.GetPosition().position;
     }
 }

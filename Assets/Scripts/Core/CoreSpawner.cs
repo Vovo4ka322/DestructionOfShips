@@ -20,4 +20,16 @@ public class CoreSpawner : MonoBehaviour
 
         return newCores;
     }
+
+    public Core SpawnOneCore(List<Core> cores)
+    {
+        Core core = null;
+
+        for (int i = 0; i < _placesForSeat.Count; i++)
+        {
+            core = Instantiate(cores[_randomCore]);
+        }
+
+        return core;
+    }
 }
